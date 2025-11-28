@@ -1,11 +1,11 @@
 const express = require('express');
-const DbConnect = require('./config/Database');
 const app = express();
 
 require("dotenv").config();
 const PORT = process.env.PORT || 4000;
 
 // Connect Database
+const DbConnect = require('./config/Database');
 DbConnect();
 
 // Middleware
